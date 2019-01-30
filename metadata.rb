@@ -4,9 +4,7 @@ maintainer_email 'mokeefe@mitre.org'
 license          'All rights reserved'
 description      'Installs/Configures Cypress'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.3.0'
-depends          "mongodb"
-depends          "apt"
-depends          "git"
-depends          "rvm"
-depends          "sudo"
+version          '2.0.0'
+depends          "apt",              "~> 6.1"
+depends          "erlang",           "~> 6.0.0"
+depends          "rabbitmq",         "~> 5.6.1"
